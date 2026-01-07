@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Superhelden Academie – Inschrijfformulier</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 5 (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light p-4">
+
+  <div class="container">
+
+    <h1 class="text-center mb-4">🦸‍♂️ Inschrijving Superhelden Academie</h1>
+    <p class="text-center text-muted mb-4">
+      Vul het formulier in en sluit je aan bij de heldhaftigste opleiding ter wereld.
+    </p>
+
+    <div class="card shadow">
+      <div class="card-body p-4">
+
+        <form>
+
+          <!-- STAP 1 – Persoonlijke gegevens -->
+          <h2 class="h4 mb-3">1. Persoonlijke gegevens</h2>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="voornaam" class="form-label">Voornaam</label>
+              <input type="text" class="form-control" id="voornaam" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="supernaam" class="form-label">Superheldennaam</label>
+              <input type="text" class="form-control" id="supernaam" required>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">E-mailadres</label>
+            <input type="email" class="form-control" id="email" placeholder="hero@academy.com" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">
+              We gebruiken je e-mailadres enkel in noodgevallen (en voor epische nieuwsbrieven).
+            </div>
+          </div>
+
+          <!-- STAP 2 – Superkracht -->
+          <h2 class="h4 mb-3 mt-4">2. Kies je superkracht</h2>
+
+          <div class="mb-3">
+            <label for="kracht" class="form-label">Superkracht</label>
+            <select class="form-select" id="kracht">
+              <option selected>Kies een kracht...</option>
+              <option>Onzichtbaarheid</option>
+              <option>Supersnelheid</option>
+              <option>Teleportatie</option>
+              <option>Gedachten lezen</option>
+              <option>Superslim brein</option>
+            </select>
+          </div>
+
+          <!-- STAP 3 – Uitrusting -->
+          <h2 class="h4 mb-3 mt-4">3. Uitrusting</h2>
+
+          <p class="mb-1">Welke uitrusting wil je tijdens je opleiding?</p>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="mantel">
+            <label class="form-check-label" for="mantel">
+              Onzichtbaarheidsmantel
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="laserbril">
+            <label class="form-check-label" for="laserbril">
+              Laserbril
+            </label>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="jetpack">
+            <label class="form-check-label" for="jetpack">
+              Jetpack
+            </label>
+          </div>
+
+          <!-- STAP 4 – Missie -->
+          <h2 class="h4 mb-3 mt-4">4. Geheime missie</h2>
+
+          <p class="mb-1">Wat is jouw favoriete type missie?</p>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="missie" id="wereldredden">
+            <label class="form-check-label" for="wereldredden">
+              De wereld redden (classic 🌍)
+            </label>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="radio" name="missie" id="snacksbeschermen">
+            <label class="form-check-label" for="snacksbeschermen">
+              Snacks beschermen tegen collega-superhelden 🍪
+            </label>
+          </div>
+
+          <!-- STAP 5 – Donkere modus -->
+          <h2 class="h4 mb-3 mt-4">5. Donkere supermodus</h2>
+
+          <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="darkmode">
+            <label class="form-check-label" for="darkmode">
+              Activeer donkere supermodus (aanbevolen voor nachtmissies)
+            </label>
+          </div>
+
+          <!-- STAP 6 – Ervaring -->
+          <h2 class="h4 mb-3 mt-4">6. Ervaring</h2>
+
+          <label for="ervaring" class="form-label">
+            Hoe ervaren ben je als superheld? (0 = “ik heb net mijn cape gekocht”, 10 = “ik ben basically Batman”)
+          </label>
+          <input type="range" class="form-range" id="ervaring" min="0" max="10">
+
+          <!-- STAP 7 – Budget (input group) -->
+          <h2 class="h4 mb-3 mt-4">7. Superhelden-budget</h2>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="budget-addon">€</span>
+            <input type="text" class="form-control" aria-describedby="budget-addon" placeholder="Budget voor gadgets">
+          </div>
+
+          <!-- STAP 8 – Geheime opmerkingen (floating label) -->
+          <h2 class="h4 mb-3 mt-4">8. Geheime opmerkingen</h2>
+
+          <div class="form-floating mb-3">
+            <textarea class="form-control" placeholder="Laat hier je geheime info achter"
+                      id="geheimeOpmerkingen" style="height: 120px"></textarea>
+            <label for="geheimeOpmerkingen">Geheime opmerkingen, zwakke punten van vijanden, enz.</label>
+          </div>
+
+          <!-- STAP 9 – Disabled VIP -->
+          <h2 class="h4 mb-3 mt-4">9. VIP-code</h2>
+
+          <fieldset disabled class="mb-3">
+            <label for="vip" class="form-label">VIP-code (alleen voor Batman)</label>
+            <input type="text" id="vip" class="form-control" value="BATMAN-ONLY">
+            <div class="form-text">
+              Deze code is momenteel niet beschikbaar voor stervelingen.
+            </div>
+          </fieldset>
+
+          <!-- STAP 10 – Akkoord & verzenden -->
+          <h2 class="h4 mb-3 mt-4">10. Laatste check</h2>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="akkoord" required>
+            <label class="form-check-label" for="akkoord">
+              Ik verklaar plechtig dat ik géén schurk ben en mijn krachten enkel voor het goede zal gebruiken. 😇
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-success w-100">
+            ✅ Inschrijven als Superheld
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
