@@ -15,7 +15,7 @@
         <div>
             <a href="#">Screenchot dekstop</a>
 
-            <div class="border-bottom bg-secondary container d-flex flex-wrap align-items-end justify-content-end py-3" id="mainNav">
+            <div class="border-bottom bg-light container d-flex flex-wrap align-items-end justify-content-end py-3" id="mainNav">
                 <ul class="nav small fw-semibold">
                     <li class="nav-item"><a class="nav-link text-dark" href="#kaarten">Workshops</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#faq">Atelier-FAQ</a></li>
@@ -25,10 +25,10 @@
         </div>
     </nav>
     <!-- HEADER -->
-    <header class="border-bottom bg-warning">
+    <header class="bg-warning text-black text-center py-5">
         <div>
             <h1>Welkom in De Smaakstudio</h1>
-            <p>Waar er gesneden, geroerd en geproefd wordt — en niemand liegt over “maar een snufje”.</p>
+            <p class="lead">Waar er gesneden, geroerd en geproefd wordt — en niemand liegt over “maar een snufje”.</p>
         </div>
     </header>
     <!-- BREADCRUMB -->
@@ -42,39 +42,52 @@
         </nav>
     </section>
     <!-- CARDS -->
-    <section id="kaarten">
-        <div>
-            <div><img alt="Pannenkoeken workshop" src="img/pancakes.avif">
-                <h3>Pannenkoek-Power <span>Sweet</span></h3>
-                <p>Van flinterdun tot fluffy: je leert draaien zonder drama. (Spatels blijven op het werkblad.)</p><a
-                    href="#contact">Reserveer je plek</a>
+    <section  class="container mt-auto" id="kaarten">
+        <div class="row g-4">
+            <div class="card smh-100">
+          <div class="card-body"><img alt="Pannenkoeken workshop" src="img/pancakes.avif" class="rounded mx-auto d-block">
+                <h3>Pannenkoek-Power <span class="badge bg-dark ms-1">Sweet</span></h3>
+                <p class="card-text text-nowrap " >Van flinterdun tot fluffy: je leert draaien zonder drama.<br>(Spatels blijven op het werkblad.)</p><a
+                 class="btn btn-warning"   href="#contact">Reserveer je plek</a>
+                    </div>
+                    </div> 
             </div>
-            <div><img alt="Tomatensaus workshop" src="img/tomatensaus.avif">
-                <h3>Saus &amp; Smaak <span>Bold</span></h3>
-                <p>Een saus die wél blijft plakken (aan je pasta, niet aan je pan). Proeven is verplicht.</p><a
-                    href="#contact">Ik doe mee</a>
+
+                <div class="card smh-100">
+            <div class="card-body"><img alt="Tomatensaus workshop" src="img/tomatensaus.avif" class="rounded mx-auto d-block">
+                <h3>Saus &amp; Smaak <span class="badge bg-danger ms-1">Bold</span></h3>
+                <p class="card-text">Een saus die wél blijft plakken (aan je pasta, niet aan je pan). Proeven is verplicht.</p><a
+                   class="btn btn-warning"  href="#contact">Ik doe mee</a>
+                   </div>
             </div>
-            <div><img alt="Mayonaise workshop" src="img/mayonaise.avif">
-                <h3>Mayonaise Meesterschap <span>Smooth</span></h3>
+            <div class="card smh-100">
+            <div class=" card-body"><img alt="Mayonaise workshop" src="img/mayonaise.avif" class="rounded mx-auto d-block">
+                <h3>Mayonaise Meesterschap <span class="badge bg-secondary text-white">Smooth</span></h3>
                 <p>Emulsie zonder tranen. Jij klopt, wij juichen. Bonus: “help, hij schift!”-noodplan.</p><a
-                    href="#contact">Klop ‘m erin</a>
+                   class="btn btn-warning" href="#contact">Klop ‘m erin</a>
+                    </div>
             </div>
-            <div><img alt="Gratin workshop" src="img/gratindauphinois.avif">
-                <h3>Gratin Deluxe <span>Layered</span></h3>
+        <div class="card smh-100">
+            <div class="card-body"><img alt="Gratin workshop" src="img/gratindauphinois.avif" class="rounded mx-auto d-block">
+                <h3>Gratin Deluxe <span class="badge bg-info text-white">Layered</span></h3>
                 <p>Dunne schijfjes, dikke smaak. We bouwen laagjes waar je trots op bent (en honger van krijgt).</p><a
-                    href="#faq">Lees de tips</a>
+                   class="btn btn-warning" href="#faq">Lees de tips</a>
             </div>
-            <div><img alt="Compote workshop" src="img/compote.avif">
-                <h3>Compote &amp; Comfort <span>Cozy</span></h3>
+            </div>
+            <div class="card sm-100">
+            <div class="card-body"><img alt="Compote workshop" src="img/compote.avif" class="rounded mx-auto d-block">
+                <h3>Compote &amp; Comfort <span class="badge bg-success text-white">Cozy</span></h3>
                 <p>Appel, peer, kaneel… en het juiste moment om te stoppen met roeren. (Ja, dat bestaat.)</p><a
-                    href="#contact">Schrijf me in</a>
+                   class="btn btn-warning" href="#contact">Schrijf me in</a>
             </div>
-            <div><img alt="Churros workshop" src="img/churros.avif">
-                <h3>Churros Chaos <span>Crunch</span></h3>
+            </div>
+            <div class="card sm-100">
+            <div class="card-body"><img alt="Churros workshop" src="img/churros.avif" class="rounded mx-auto d-block">
+                <h3>Churros Chaos <span class="badge bg-warning text-dark">Crunch</span></h3>
                 <p>Suikerwolken en knapperige staven. We beloven: je gaat naar huis met meer dan kruimels.</p><a
-                    href="#faq">Hoe werkt dit?</a>
+                   class="btn btn-warning" href="#faq">Hoe werkt dit?</a>
             </div>
-        </div>
+            </div>
     </section>
     <!-- ACCORDION -->
     <section id="faq">
@@ -96,22 +109,24 @@
         </div>
     </section>
     <!-- CONTACT + FORM -->
-    <section id="contact">
-        <div>
+    <section class="bg-light p-4" id="contact">
+        <div class="container">
             <div>
                 <div>
                     <div>
-                        <h2>Inschrijfformulier</h2>
-                        <p>Vul dit in alsof je straks echt met een schort aan staat. (Spoiler: dit is een demo.)</p>
+                        <h2 class="text-center mb-4">Inschrijfformulier</h2>
+                        <p class="text-center text-muted mb-4">Vul dit in alsof je straks echt met een schort aan staat. (Spoiler: dit is een demo.)</p>
                     </div>
-                    <div>
-                        <div>
+                    <div >
+                        <div >
                             <form id="funForm">
                                 <!-- Form control -->
                                 <div>
+                                    <div>
                                     <label for="naam">Jouw keuken-alias</label>
                                     <input id="naam" placeholder="bv. Chef Snufje" type="text">
                                     <div>Tip: “Chef123” is al bezet.</div>
+                                    </div>
                                 </div>
                                 <!-- Input group -->
                                 <div>
@@ -178,7 +193,7 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="bg-black justify-content-center text-white">
         <small>© 2025 De Smaakstudio™ – Alle rechten voorbehouden.<span>Calorieën tellen we morgen wel.</span></small>
     </footer>
 </body>
